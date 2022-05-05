@@ -13,20 +13,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestfulInterface {
 
-    @GetMapping("/test")
-    public String test() {
-        return "Test";
-    }
+    /* Debugging */
+    // @GetMapping("/test")
+    // public String test() {
+    // return "Test";
+    // }
 
+    // Set endpoint
     @GetMapping("/api/dirlist")
-    @ResponseBody
+    @ResponseBody // Dynamic API path parameter
     public String directoryListing(@RequestParam(defaultValue = "/") String path) {
-        // String dirName = "/mnt/c/";
 
-        File fileName = new File(path);// File(dirName);
+        File fileName = new File(path);
         File[] fileList = fileName.listFiles();
         List<String> filesArrStr = new ArrayList<>();
 
+        // Formatting to print out 'Last modified date' in readable format
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy HH:mm:ss");
 
         for (File file : fileList) {

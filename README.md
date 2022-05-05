@@ -10,7 +10,8 @@
 git clone https://github.com/tjrich/entersekt-assessment.git
 ```
 ```cd``` into the directory of the repository.  
-Wait for Gradle to initialise all required files.  
+Wait for Gradle to initialise all required files. You should see directories
+such as ```.gradle``` and ```bin``` once initialisation is complete.
 
 Run the following command
 ```bash
