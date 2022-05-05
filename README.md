@@ -19,6 +19,7 @@ Run the following command
 ~$ gradle build
 ```
 ## Docker Guide
+Make sure that Docker is already running on your machine.
 ### Build Docker Image
 To build the Docker image, run the following command
 ```bash
@@ -114,6 +115,6 @@ Example - Linux
 ```
 Example - Windows
 ```bash
-~$ java Consumer.java http://localhost:8080/api/dirlist?path=C:\\
+~$ java Consumer.java http://localhost:8080/api/dirlist?path=C://
 ```
 
