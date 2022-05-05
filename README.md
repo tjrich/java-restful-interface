@@ -117,4 +117,15 @@ Once inside the directory of ```Consumer.java```, run the following command
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path=C://
 ```
-
+## Output Example
+```bash
+$ java Consumer.java http://localhost:8080/api/dirlist?path=/
+ /boot Attributes: Read: true Write: false Directory: true Last Modified: 03/10/2021 11:15:00 Is Hidden: false Size: 4096 bytes
+ /bin Attributes: Read: true Write: false Directory: true Last Modified: 30/04/2022 21:57:18 Is Hidden: false Size: 4096 bytes
+ /run Attributes: Read: true Write: false Directory: true Last Modified: 05/05/2022 19:36:54 Is Hidden: false Size: 300 bytes
+ /init Attributes: Read: true Write: false Directory: false Last Modified: 26/04/2022 09:34:05 Is Hidden: false Size: 1440152 bytes
+ /proc Attributes: Read: true Write: false Directory: true Last Modified: 05/05/2022 17:13:40 Is Hidden: false Size: 0 bytes
+ /tmp Attributes: Read: true Write: true Directory: true Last Modified: 05/05/2022 23:53:47 Is Hidden: false Size: 12288 bytes
+ /var Attributes: Read: true Write: false Directory: true Last Modified: 11/03/2022 23:17:17 Is Hidden: false Size: 4096 bytes
+ /lost+found Attributes: Read: false Write: false Directory: true Last Modified: 10/04/2019 18:35:05 Is Hidden: false Size: 16384 bytes
+```
