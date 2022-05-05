@@ -110,14 +110,16 @@ Once inside the directory of ```Consumer.java```, run the following command
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path="PATH"
 ```
 #### Example - Linux
+If the RESTful interface was run on Linux, run the following command
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path=/
 ```
 #### Example - Windows
+If the RESTful interface was run on Windows, run the following command
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path=C://
 ```
-## Output Example
+## Output Example - Linux
 ```bash
 $ java Consumer.java http://localhost:8080/api/dirlist?path=/
  /boot Attributes: Read: true Write: false Directory: true Last Modified: 03/10/2021 11:15:00 Is Hidden: false Size: 4096 bytes
