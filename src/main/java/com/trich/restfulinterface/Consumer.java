@@ -27,7 +27,8 @@ public class Consumer {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println(getData("http://localhost:8080/api/dirlist?path=/"));
+        System.out.println(getData(args[0]));
+        // System.out.println(getData("http://localhost:8080/api/dirlist?path=/"));
     }
 
 }
