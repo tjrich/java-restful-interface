@@ -46,9 +46,9 @@ docker run -p 8080:8080 restful-interface
 ```
 
 ## Consuming the REST Service
-- First make sure that the RESTful interface is running.  
-Contained in this repo is a class named ```Consumer.java```  
-```cd``` into the directory that contains ```Consumer.java```  
+- First make sure that the RESTful interface is running.    
+Contained in this repo is a class named ```Consumer.java```    
+```cd``` into the directory that contains ```Consumer.java```    
 Example
 ```bash
 ~$ cd /src/main/java/com/trich/restfulinterface
