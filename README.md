@@ -85,8 +85,8 @@ public class Consumer {
 }
 ```  
 ### Run the Consumer
-```cd``` into the directory that contains ```Consumer.java```    
-### Example
+```cd``` into the directory that contains ```Consumer.java```  
+
 ```bash
 ~$ cd /src/main/java/com/trich/restfulinterface
 ```  
@@ -94,8 +94,12 @@ Once inside the directory of ```Consumer.java```, run the following command
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path="PATH"
 ```
-Example
+Example - Linux
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path=/
+```
+Example - Windows
+```bash
+~$ java Consumer.java http://localhost:8080/api/dirlist?path=C:\\
 ```
 
