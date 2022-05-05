@@ -109,11 +109,11 @@ Once inside the directory of ```Consumer.java```, run the following command
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path="PATH"
 ```
-####Example - Linux
+#### Example - Linux
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path=/
 ```
-####Example - Windows
+#### Example - Windows
 ```bash
 ~$ java Consumer.java http://localhost:8080/api/dirlist?path=C://
 ```
