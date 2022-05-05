@@ -55,7 +55,7 @@ Example
 ```  
 Once inside the directory of ```Consumer.java```, run the following command
 ```bash
-~$ java Consumer.java "http://localhost:8080/api/dirlist?path="PATH""
+~$ java Consumer.java http://localhost:8080/api/dirlist?path="PATH"
 ```
 Example
 ```bash
