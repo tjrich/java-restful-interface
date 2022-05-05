@@ -1,4 +1,4 @@
-# Entersekt Technical Assessment
+# Java RESTful Interface
 
 ### What You Need
 - Java 11+
@@ -16,7 +16,6 @@ Run the following command
 ~$ gradle build
 ```
 ## Docker Guide
-TODO
 ### Build Docker Image
 To build the Docker image, run the following command
 ```bash
