@@ -13,13 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestfulInterface {
 
-    @GetMapping("/api/dirlisting")
+    @GetMapping("/api/dirlist")
     @ResponseBody
     public String directoryListing(@RequestParam(defaultValue = "/") String path) {
-        // String dirName = "/mnt/c/Users/timot";
-        // String dirName = path;
+        // String dirName = "/mnt/c/";
 
-        File fileName = new File(path);
+        File fileName = new File(path);// File(dirName);
         File[] fileList = fileName.listFiles();
         List<String> filesArrStr = new ArrayList<>();
 
@@ -27,14 +26,14 @@ public class RestfulInterface {
 
         for (File file : fileList) {
             filesArrStr.add(
-                    "File: " + file.getPath() +
-                            "\nAttributes:" +
-                            " \nRead: " + file.canRead() +
-                            " \nWrite: " + file.canWrite() +
-                            " \nDirectory: " + file.isDirectory() +
-                            " \nLast Modified: " + sdf.format(file.lastModified()) +
-                            " \nIs Hidden: " + file.isHidden() +
-                            " \nSize: " + file.length() + " bytes");
+                    file.getPath() +
+                            " Attributes:" +
+                            " Read: " + file.canRead() +
+                            " Write: " + file.canWrite() +
+                            " Directory: " + file.isDirectory() +
+                            " Last Modified: " + sdf.format(file.lastModified()) +
+                            " Is Hidden: " + file.isHidden() +
+                            " Size: " + file.length() + " bytes");
         }
 
         // return listStr.toString();
