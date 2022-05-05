@@ -1,7 +1,7 @@
 # Entersekt Technical Assessment
 
 ### What You Need
-- Java 8 or later
+- Java 11+
 - Gradle 4+
 - Spring Boot 2.6.7+
 ## Installation

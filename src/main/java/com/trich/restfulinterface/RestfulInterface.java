@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestfulInterface {
 
+    @GetMapping("/test")
+    public String test() {
+        return "Test";
+    }
+
     @GetMapping("/api/dirlist")
     @ResponseBody
     public String directoryListing(@RequestParam(defaultValue = "/") String path) {
@@ -25,6 +30,7 @@ public class RestfulInterface {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy HH:mm:ss");
 
         for (File file : fileList) {
+
             filesArrStr.add(
                     file.getPath() +
                             " Attributes:" +
