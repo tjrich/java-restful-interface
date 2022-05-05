@@ -7,7 +7,7 @@
 ## Installation
 ### Clone This Repository
 ```
-git clone https://github.com/tjrich/entersekt-assessment.git
+git clone https://github.com/tjrich/java-restful-interface.git
 ```
 ```cd``` into the directory of the repository.  
 
