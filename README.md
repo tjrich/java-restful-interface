@@ -4,6 +4,9 @@
 - Java 11+
 - Gradle 4+
 - Spring Boot 2.6.7+
+## How it Works
+This Java application makes use of Spring Boot to create a RESTful interface which is exposed on the port 8080. This interface returns the full directory listing of a given path. Depending on the system it is run on, either Windows, Linux or Docker, the interface will only have access to that system's directories.  
+An exception for this is when the interface is run using Windows Subsystem for Linux (WSL). Windows directories can then be accessed via the endpoint ```/api/dirlist?path=/mnt/c/```.
 ## Installation
 ### Clone This Repository
 ```

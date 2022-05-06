@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestfulInterface {
 
     /* Debugging */
-    // @GetMapping("/test")
-    // public String test() {
-    // return "Test";
-    // }
+    @GetMapping("/status")
+    public String test() {
+        return "Status: OK";
+    }
 
     // Set endpoint
     @GetMapping("/api/dirlist")
@@ -44,7 +44,7 @@ public class RestfulInterface {
                             " Size: " + file.length() + " bytes");
         }
 
-        // return listStr.toString();
+        // return fileList.toString();
         return filesArrStr.toString();
     }
 }
